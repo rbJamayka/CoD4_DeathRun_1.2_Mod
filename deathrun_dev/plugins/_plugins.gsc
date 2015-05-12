@@ -44,11 +44,11 @@ main()
 	LoadPlugin( plugins\antiwallbang::init, "Anti-Wallbang", "Viking" );
 	LoadPlugin( plugins\_nomusic::init, "No Double Music", "BraXi" );
 	LoadPlugin( plugins\_efr::init, "Unlimit Free Run Rounds", "Rycoon" );
-	LoadPlugin( plugins\qubefix::init, "Qube Fix", "Darmuh" );
+//	LoadPlugin( plugins\qubefix::init, "Qube Fix", "Darmuh" ); this plugin isnt in the folder
 	if( getDvar("mapname") == ("mp_deathrun_skypillar") )
 		LoadPlugin( plugins\skypillarbugfix::init, "Sky Pillar Bug Fix", "Duffman" );
-	if(getDvar("mapname") == "mp_dr_sm_world")
-		LoadPlugin( plugins\mariobugfix::init, "Mario Cloud bugfix", "DuffMan" );
+/*	if(getDvar("mapname") == "mp_dr_sm_world")
+		LoadPlugin( plugins\mariobugfix::init, "Mario Cloud bugfix", "DuffMan" );this plugin isnt in the folder*/
 	if(getDvar("mapname") != "mp_deathrun_qube")
 		setDvar("g_knockback",1000);
 
